@@ -15,11 +15,15 @@
         background-color:rgb(241, 248, 232);
         font-family: "Sono", sans-serif;
       }
+      a {
+      text-decoration: none;
+      color: inherit;
+      }
       .pricing-container{
       display:flex;
       gap:2rem;
       justify-content:center;
-      height: 100vh;
+      height: 94vh;
       align-items: center;
       }
       .plan-title{
@@ -42,9 +46,6 @@
       text-align:center;
       transition: background-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
       }
-      .pricing-plan:hover{
-       transform: scale(1.05);
-      }
       .plan-button{
       text-align:center;
       background-color:rgb(85, 173, 155);
@@ -53,12 +54,15 @@
       padding:10px;
       color:rgb(241, 248, 232);
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-
       }
+
       .plan-button:hover{
        background-color: rgb(216, 239, 211);
        color:rgb(85, 173, 155);
        transform: scale(0.90);
+      }
+      .pricing-plan:hover{
+       transform: scale(1.05);
       }
 
       .plan-features{
@@ -96,7 +100,7 @@
           <li>✉️  700 SMS</li>
           <li>📞 700 DK Konuşma</li>
         </ul>
-        <button class="plan-button">Satın Al</button>
+        <button class="plan-button"> <a href="https://www.turkcell.com.tr/paket-ve-tarifeler/4-5-g-hizinda/star-plus-5-gb-paketi">Satın Al</a></button>
       </div>
       <div class="pricing-plan">
         <div class="plan-title">Standart</div>
@@ -106,7 +110,7 @@
           <li>✉️ 2000 SMS </li>
           <li>📞 1000 DK Konuşma</li>
         </ul>
-        <button class="plan-button">Satın Al</button>
+        <button class="plan-button"> <a href="https://www.turkcell.com.tr/paket-ve-tarifeler/4-5-g-hizinda/star-plus-15-gb">Satın Al</a></button>
       </div>
       <div id ="last" class="pricing-plan">
         <div class="plan-title">Lüks</div>
@@ -116,7 +120,7 @@
           <li>🔥 Sınırsız SMS</li>
           <li>👑 Sınırsız Konuşma</li>
         </ul>
-        <button class="plan-button">Satın Al</button>
+        <button class="plan-button"> <a href="https://www.turkcell.com.tr/paket-ve-tarifeler/4-5-g-hizinda/firsat-40-gb">Satın Al</a></button>
       </div>
     </div>
     <footer>
