@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color:rgb(241, 248, 232);
+        font-family: "Sono", sans-serif;
+      }
+      .pricing-container{
+      display:flex;
+      gap:2rem;
+      justify-content:center;
+      height: 94vh;
+      align-items: center;
+      }
+      .plan-title{
+      font-size:1.8rem;
+      font-weight:520;
+      }
+      .plan-price{
+      font-size:3rem;
+      font-weight:600;
+      }
+      .pricing-plan{
+      background-color:rgb(149, 210, 179);
+      flex-basis:396.55px;
+      flex: 1;
+      height:250px;
+      padding:20px;
+      border-radius: 10px;
+      text-align:center;
+      }
+      .plan-button{
+      text-align:center;
+      background-color:rgb(85, 173, 155);
+      border-radius:10px;
+      border-color:rgb(85, 173, 155);
+      padding:10px;
+      color:rgb(241, 248, 232);
+      }
+      .plan-features{
+      margin-right:40px;
+      font-size:1rem;
+      }
+      footer{
+      background-color:rgb(149, 210, 179);
+      padding: 0px 20px;
+      text-align:right;
+      border-radius:5px;
+      }
+      ul{list-style-type: none;}
+
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+      .pricing-container{
+      flex-direction:column;
+      height:100%;
+      }
+      #last{margin-bottom:100px;}
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Avantajlı</div>
+        <div class="plan-price">₺149.99/aylık</div>
+        <ul class="plan-features">
+          <li>📶 5GB İnternet</li>
+          <li>✉️  700 SMS</li>
+          <li>📞 700 DK Konuşma</li>
+        </ul>
+        <button class="plan-button">Satın Al</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standart</div>
+        <div class="plan-price">₺299.99/aylık</div>
+        <ul class="plan-features">
+          <li>🚀 15GB İnternet</li>
+          <li>✉️ 2000 SMS </li>
+          <li>📞 1000 DK Konuşma</li>
+        </ul>
+        <button class="plan-button">Satın Al</button>
+      </div>
+      <div id ="last" class="pricing-plan">
+        <div class="plan-title">Lüks</div>
+        <div class="plan-price">₺549.99/aylık</div>
+        <ul class="plan-features">
+          <li>🧠 40GB İnternet</li>
+          <li>🔥 Sınırsız SMS</li>
+          <li>👑 Sınırsız Konuşma</li>
+        </ul>
+        <button class="plan-button">Satın Al</button>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Tüm Hakları Saklıdır. | AlpCell</p>
+    </footer>
+  </body>
+</html>
