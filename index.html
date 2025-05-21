@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Tarifeler</title>
+    <title>AlpCell</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,17 +23,16 @@
       display:flex;
       gap:2rem;
       justify-content:center;
-      height: 94vh;
+      height: 82vh;
       align-items: center;
       }
       .plan-title{
-
       font-size:3rem;
       font-weight:520;
       }
       .plan-price{
       font-size:1.5rem;
-      font-weight:600;
+      font-weight:510;
       }
       .pricing-plan{
       box-shadow: 0px 0px 8px black;
@@ -55,7 +54,6 @@
       color:rgb(241, 248, 232);
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
       }
-
       .plan-button:hover{
        background-color: rgb(216, 239, 211);
        color:rgb(85, 173, 155);
@@ -77,9 +75,34 @@
       }
       ul{list-style-type: none;}
 
+      .headings{
+      margin-top:27px;
+      display:inline-block;
+      padding: 10px 20px;
+      color:rgb(241, 248, 232);
+      font-size:1.2rem;
+      font-weight:bold;
+      }
+      .head-section {
+      position: relative;
+      text-align: center;
+      height: 100px;
+      width: 100%;
+      background-color: rgb(149, 210, 179);
+      border-radius: 3px;
+      }
 
+      .hamburger {
+      color: rgb(241, 248, 232);
+      position: absolute;
+      left: 3rem;
+      top: 1.5rem;
+      font-size: 50px;
+      cursor: pointer;
+      }
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+      #first{margin-top:3rem;}
       .pricing-container{
       flex-direction:column;
       height:100%;
@@ -91,7 +114,14 @@
   </head>
 
   <body>
-    <div class="pricing-container">
+    <div class ="head-section">
+      <span class="hamburger">≡</span>
+      <span class="headings"><a href="">Ana Sayfa</a></span>
+      <span class="headings"><a href="">Tarifeler</a></span>
+      <span class="headings"><a href="">Hakkımızda</a></span>
+    </div>
+
+    <div id="first" class="pricing-container">
       <div class="pricing-plan">
         <div class="plan-title">Avantajlı</div>
         <div class="plan-price">₺149.99/aylık</div>
@@ -128,3 +158,4 @@
     </footer>
   </body>
 </html>
+
